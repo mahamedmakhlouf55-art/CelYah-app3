@@ -158,7 +158,7 @@ class _DashboardState extends State<Dashboard> {
       onDestinationSelected:(v)=>setState(()=>tab=v),destinations:const [
       NavigationDestination(icon:Icon(Icons.favorite_border),selectedIcon:Icon(Icons.favorite),label:'سيليا'),
       NavigationDestination(icon:Icon(Icons.videocam_outlined),label:'الكاميرا'),
-      NavigationDestination(icon:Icon(Icons.tune),label:'الإعدادات')])));
+      NavigationDestination(icon:Icon(Icons.tune),label:'الإعدادات')]));
   Widget _home()=>LayoutBuilder(builder:(context,c){
     return ListView(padding:const EdgeInsets.fromLTRB(15,6,15,18),children:[
       Row(children:[const Icon(Icons.circle,color:Colors.greenAccent,size:9),const SizedBox(width:8),
@@ -191,7 +191,7 @@ class _DashboardState extends State<Dashboard> {
         decoration:InputDecoration(hintText:'اتكلم مع سيليا...',isDense:true,
           contentPadding:const EdgeInsets.symmetric(horizontal:17,vertical:14),
           fillColor:const Color(0xFF251633),filled:true,
-          border:OutlineInputBorder(borderRadius:BorderRadius.circular(30),borderSide:BorderSide(color:lavender.withValues(alpha:.3))))),
+          border:OutlineInputBorder(borderRadius:BorderRadius.circular(30),borderSide:BorderSide(color:lavender.withValues(alpha:.3)))))),
         const SizedBox(width:7),_roundIcon(listening?Icons.stop:Icons.mic,listen),
         const SizedBox(width:6),_roundIcon(Icons.send_rounded,_chat)]),
       const SizedBox(height:12),
